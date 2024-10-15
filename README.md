@@ -15,7 +15,6 @@ $$
 
 ![이미지 설명](https://github.com/minseong124123123/modern-contreol-systems/blob/26fbfeb11112208a0adb2438666e7a5fc950e8b6/P2.15.png)
 
-![이미지 설명](https://github.com/minseong124123123/modern-contreol-systems/blob/4e71741580cd9d20e29b6a3a9d7c81c9160669e8/P2.7.png)
-
+![이미지 설명](https://github.com/minseong124123123/modern-contreol-systems/blob/405f79abac5993ce8b14e41386df7e4c4308d5c9/P2.26.png)
 ![이미지 설명](https://github.com/minseong124123123/modern-contreol-systems/blob/4e71741580cd9d20e29b6a3a9d7c81c9160669e8/P2.7.png)
 
