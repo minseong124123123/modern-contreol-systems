@@ -42,24 +42,15 @@ $$
 
 ![이미지 설명](https://github.com/minseong124123123/modern-contreol-systems/blob/405f79abac5993ce8b14e41386df7e4c4308d5c9/P2.26.png)
 
-```matlab
 
-syms s M m b K X Y F 
 
-A = [M*s^2 + b*s + k - (b*s + k), -(b*s + K);
-     -(b*s + K), m*s^2 + b*s + K];
-
-B = [F; 0];
-
-det_A = det(A);
-
-A_Y = A;
-A_Y(:, 2) = B;
-
-Y_S = det(A_Y) / det_A;
-
-G_S = simplify(Y_S / F);
-disp(' G(S) = ');
+$$
+\begin{bmatrix}
+\frac{s^2 + 12s + 44}{s^3 + 12s^2 + 44s - 48} & \frac{-(s + 12)}{s^3 + 12s^2 + 44s - 48} & \frac{-1}{s^3 + 12s^2 + 44s - 48} \\
+\frac{-48}{s^3 + 12s^2 + 44s - 48} & \frac{s(s + 12)}{s^3 + 12s^2 + 44s - 48} & \frac{s}{s^3 + 12s^2 + 44s - 48} \\
+\frac{-(48s)}{s^3 + 12s^2 + 44s - 48} & \frac{-4(11s - 12)}{s^3 + 12s^2 + 44s - 48} & \frac{s^2}{s^3 + 12s^2 + 44s - 48}
+\end{bmatrix}
+$$
 
 ```
 
