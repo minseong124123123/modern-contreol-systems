@@ -1,4 +1,4 @@
-# modern-contreol-systems
+# Modern-control-systems
 ## 제어공학 과제1                    
 ##### 2020732066 최민승
 
@@ -43,7 +43,8 @@ $$
 ![이미지 설명](https://github.com/minseong124123123/modern-contreol-systems/blob/405f79abac5993ce8b14e41386df7e4c4308d5c9/P2.26.png)
 
 ```matlab
-syms s M m b K X Y F
+
+syms s M m b K X Y F 
 
 A = [M*s^2 + b*s + k - (b*s + k), -(b*s + K);
      -(b*s + K), m*s^2 + b*s + K];
@@ -54,15 +55,16 @@ det_A = det(A);
 
 A_Y = A;
 A_Y(:, 2) = B;
+
 Y_S = det(A_Y) / det_A;
 
-disp('Y(S) = ');
-pretty(Y_S);
+G_S = simplify(Y_S / F);
+disp(' G(S) = ');
 
 ```
 
 $$
-Y(S) = \frac{F (K + b s)}{K^2 + 2 K b s - M K s^2 + b^2 s^2 - M b s^3 - M m s^4}
+G(S) = \frac{K + b s}{K^2 + 2 K b s - M K s^2 + b^2 s^2 - M b s - M m s^3}
 $$
 
 ---
